@@ -1,6 +1,6 @@
 ## Dockerfiles for various things
 
-#### Go Development
+#### 1. Go Development
 
 The following are steps to start up a docker container that serves as a Go 1.12 development environment. Please note that step 2 intends for users to update the compose yaml file so that they can configure the volumes and environment variables needed for the container
 
