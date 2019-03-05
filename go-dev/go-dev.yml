@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  go-dev:
+    build: .
+    container_name: go-dev
+    volumes:
+      - /Users/arsalan/dev:/go/src/github.com/arsidada
+      - $SANDBOX_HOME/go/src/github.ibm.com/:/go/src/github.ibm.com
+    environment:
+      - PROJECT_NAME=hello-world
+    networks:
+      main:
+        aliases:
+          - go-dev
+
+networks:
+  main:
