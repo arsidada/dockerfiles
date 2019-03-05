@@ -10,9 +10,5 @@ RUN curl -O curl -O https://dl.google.com/go/go1.12.linux-amd64.tar.gz && \
     git config --global url."git@github.ibm.com:".insteadOf "https://github.ibm.com/"
 
 
-RUN mkdir -p /go/src
-
-WORKDIR /go/src
-
 ENTRYPOINT tail -f /dev/null
 
